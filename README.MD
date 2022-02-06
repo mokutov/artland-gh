@@ -26,6 +26,7 @@ Pagination. I've started to do it after all the rest was ready. Since GitHub dec
 - Preload all cursors
 - Preload all data with all cursors (maybe it is the best variant, but depending on the amount of data and application user flows)
 - Does render pagination UI rely only on the total amount of repositories and preload required amounts of data on UI interaction (hover/clicks/focus)?
+
 Honestly, I don't like any of them. But I've chosen the variant with cursors only. You can switch between pagination types using buttons on the bottom of the repositories area. Implementation itself is a little bit hardcoded, but shows and mostly works as POC. If you want more common implementation (issues will have the same logic, maybe with additional cache logic updates because new issues creation is allowed there) for Issues or Users, let me know.
 
 ![Screen Shot 2022-02-06 at 03 29 03](https://user-images.githubusercontent.com/34650035/152666256-495acbd4-4c63-4d32-a1ea-2309f54c6005.png)
