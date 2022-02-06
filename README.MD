@@ -16,7 +16,7 @@ How does it work? Nothing special.
 - As requested, we have GitHub token setup in the .env.
 - There are no additional libraries. I just added "dayjs" for date format, sass (I think it's already a habit).
 - Simple jsconfig.json. I prefer to have absolute paths for everything (commonly, I prefer to have additional shortcuts like '@utils' or '@components' but here is '@/*')
-- Since I knew there were at least two unknowns (GraphQL / Apollo and Github API) and test assignment allowed JS :) Why didn't I choose TypeScript? as I mentioned in our first interview, the primary language last year was JS, so it was just quetion of time (but I hope there will be a little more TS in my life in the future).
+- Why didn't I choose TypeScript? Since I knew there were at least two unknowns (GraphQL / Apollo and Github API) and test assignment allowed JS :) As I mentioned in our first interview, the primary language last year was JS, so it was just quetion of time (but I hope there will be a little more TS in my life in the future).
 - There is no special "eslint" config, just a plain IDE formatter used.
 - I hope that I've implemented all the required functionality :)
 
@@ -26,7 +26,7 @@ Pagination. I've started to do it after all the rest was ready. Since GitHub dec
 - Preload all cursors
 - Preload all data with all cursors (maybe it is the best variant, but depending on the amount of data and application user flows)
 - Does render pagination UI rely only on the total amount of repositories and preload required amounts of data on UI interaction (hover/clicks/focus)?
-Honestly, I don't like any of them. But I've chosen the variant with cursors only. You can switch between pagination types using buttons on the bottom of the repositories area.
+Honestly, I don't like any of them. But I've chosen the variant with cursors only. You can switch between pagination types using buttons on the bottom of the repositories area. Implementation itself is a little bit hardcoded, but shows and mostly works as POC. If you want more common implementation (issues will have the same logic, maybe with additional cache logic updates because new issues creation is allowed there) for Issues or Users, let me know.
 
 ![Screen Shot 2022-02-06 at 03 29 03](https://user-images.githubusercontent.com/34650035/152666256-495acbd4-4c63-4d32-a1ea-2309f54c6005.png)
 
@@ -36,7 +36,6 @@ One more thing is that I didn't find any good way to filter "organization" resul
 Here are couple additional screenshots with error / loading / no results states and so on:
 
 ![Screen Shot 2022-02-06 at 02 50 16](https://user-images.githubusercontent.com/34650035/152666257-b7b925fa-ce31-4e6a-b164-956a7e8e2289.png)
-![Screen Shot 2022-02-06 at 02 49 59](https://user-images.githubusercontent.com/34650035/152666258-031a89ce-7726-4fb4-84ec-8132780ba287.png)
 ![Screen Shot 2022-02-06 at 02 46 18](https://user-images.githubusercontent.com/34650035/152666259-a89f7abb-f8a2-4b38-95db-7bf0485fcd62.png)
 ![Screen Shot 2022-02-06 at 02 45 32](https://user-images.githubusercontent.com/34650035/152666260-547d07d9-331f-4a63-a139-efb5823596ee.png)
 ![Screen Shot 2022-02-06 at 02 44 50](https://user-images.githubusercontent.com/34650035/152666261-b5bbc0ef-1c86-4abd-9241-1d059dc3adca.png)
