@@ -1,8 +1,15 @@
-How to run?
+## How to run
 - `npm i` or `yarn`
+- generate GitHub token with the following permissions: `user` `public_repo` `repo` `repo_deployment` `repo:status` `read:repo_hook` `read:org` `read:public_key` `read:gpg_key`
+- paste generated token to the `.env` `GITHUB_TOKEN`
 - `npm run dev` or `yarn dev`
 
+> Solution tested primarily in Chrome (and Safari). It should work in all evergreen browsers without problems, but I suggest using Chrome for the best experience.
+
+## Demo
 https://user-images.githubusercontent.com/34650035/152666200-54236825-4271-4f27-9150-e23610d3e5cd.mov
+
+## Description
 
 How does it work? Nothing special. 
 - Just a basic nextjs app.
@@ -25,6 +32,7 @@ Honestly, I don't like any of them. But I've chosen the variant with cursors onl
 
 One more thing is that I didn't find any good way to filter "organization" results during the search. So you will find that I preload the first "20" results of the search and filter results without "User" data and show five first. (Kind of a hack, but it looks more natural). Strange that their REST API allows requesting only users during search :(.
 
+## Screenshots
 Here are couple additional screenshots with error / loading / no results states and so on:
 
 ![Screen Shot 2022-02-06 at 02 50 16](https://user-images.githubusercontent.com/34650035/152666257-b7b925fa-ce31-4e6a-b164-956a7e8e2289.png)
@@ -33,4 +41,5 @@ Here are couple additional screenshots with error / loading / no results states 
 ![Screen Shot 2022-02-06 at 02 45 32](https://user-images.githubusercontent.com/34650035/152666260-547d07d9-331f-4a63-a139-efb5823596ee.png)
 ![Screen Shot 2022-02-06 at 02 44 50](https://user-images.githubusercontent.com/34650035/152666261-b5bbc0ef-1c86-4abd-9241-1d059dc3adca.png)
 
+## P.S.
 If you have any more questions about the solution, please get in touch with me :).
