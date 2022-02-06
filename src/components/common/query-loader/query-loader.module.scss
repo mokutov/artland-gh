@@ -1,0 +1,27 @@
+.loading {
+  border-radius: 4px;
+  color: #000;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 16px;
+  background-color: lightgray;
+}
+
+.error {
+  margin-top: 16px;
+  width: 100%;
+  background-color: indianred;
+  border-radius: 4px;
+  color: #fff;
+  padding: 16px;
+  pre {
+    margin-top: 16px;
+    color: #000;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 2px;
+    overflow: auto;
+  }
+}

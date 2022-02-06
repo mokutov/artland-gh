@@ -1,0 +1,36 @@
+.button {
+  height: 48px;
+  line-height: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: black;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  user-select: none;
+
+  &:hover, &:active, &:focus {
+    background-color: royalblue;
+    outline: 0;
+  }
+
+  &[theme="outline"] {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    line-height: 42px;
+
+    &:hover, &:active, &:focus {
+      background-color: #fff;
+      color: royalblue;
+      border: 3px solid royalblue;
+      outline: 0;
+    }
+  }
+
+  &[disabled] {
+    background-color: gainsboro;
+    pointer-events: none;
+  }
+}

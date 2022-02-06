@@ -1,0 +1,52 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  width: 128px;
+  padding: 16px;
+  border-radius: 4px;
+  &:focus {
+    box-shadow: inset 0 0 0 3px black;
+    outline: 0;
+  }
+}
+
+.avatar {
+  display: block;
+  background-color: slategray;
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  background-position: center center;
+}
+
+.name {
+  color: darkgray;
+  text-align: center;
+}
+
+.login {
+  font-weight: bold;
+  text-align: center;
+}
+
+.name, .login {
+  user-select: none;
+  max-width: 96px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 8px;
+}
+
+.item:hover, .item.selected {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+.name, .avatar, .item, .login {
+  transition: all 0.15s ease-in-out;
+}

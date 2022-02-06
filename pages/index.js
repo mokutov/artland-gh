@@ -1,12 +1,5 @@
-import Link from 'next/link'
+import MainPage from "@/pages/main-page";
 
 export default function IndexPage() {
-  return (
-    <div>
-      Hello World.{' '}
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </div>
-  )
+    return <MainPage />;
 }
